@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class NotetakerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NotetakerApplication.class, args).v;
+		SpringApplication.run(NotetakerApplication.class, args);
 	}
-
 }
