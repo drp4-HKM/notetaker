@@ -1,7 +1,5 @@
 package local.dplabs.notetaker.note;
 
-import javax.websocket.server.ServerEndpoint;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
