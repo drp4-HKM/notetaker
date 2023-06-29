@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+
 @Entity
 public class Note {
     
@@ -13,7 +16,14 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     
+    @Schema(description = "The short note",
+            name = "shortNote",
+            required = true)
     private String shortNote;
+    
+    @Schema(description = "The detailed note",
+            name = "detailedNote",
+            required = false)
     private String detailedNote;
 
     
